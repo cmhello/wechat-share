@@ -6,8 +6,6 @@
     * 获取微信公众号的的`appId`和`appSecret`
     * 将获取到的`appId`和`appSecret`替代`index.php`中`appId`和`appSecret`  
 ```
-#!php
-
 <?php
 require_once "jssdk.php";
 $jssdk = new JSSDK("appId", "appSecret");
