@@ -5,13 +5,13 @@
     * 先登录微信公众平台进"公众号设置"的"功能设置"里填写"JS接口安全域名"（将下载的文件替代项目下的`MP_verify_3yUC8QZ398WEbX1e.txt`文件）
     * 获取微信公众号的的`appId`和`appSecret`
     * 将获取到的`appId`和`appSecret`替代`index.php`中`appId`和`appSecret`  
-```
-<?php
-require_once "jssdk.php";
-$jssdk = new JSSDK("appId", "appSecret");
-$signPackage = $jssdk->GetSignPackage();
-?>
-```
+      ```php
+      <?php
+      require_once "jssdk.php";
+      $jssdk = new JSSDK("appId", "appSecret");
+      $signPackage = $jssdk->GetSignPackage();
+      ?>
+      ```
 
 * 使用（以在wordpress下使用为例）
     * 将`index.php`中`wx.onMenuShareTimeline`（分享至朋友圈）和`wx.onMenuShareAppMessage`（分享给好友）方法下的属性值改为你希望的的值
